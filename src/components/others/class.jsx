@@ -1,10 +1,18 @@
 import c1 from '../../assests/images/c1.jpg'
 import playIcon from '../../assests/images/play-icon.png'
 import c2 from '../../assests/images/c2.jpg'
+import React from 'react';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
 
 export default function Class(){
     return (
         <>
+        
+   
+
             <section className="class_section ">
                 <div className="container-fluid">
                 <div className="row">
@@ -24,7 +32,8 @@ export default function Class(){
                         </div>
                         </div>
                         <div className="class_box-container">
-                        <div className="owl-carousel owl_carousel1">
+                        <OwlCarousel className='owl-carousel owl_carousel1' loop margin={10} nav >
+                        
                             <div className="item">
                             <div className="box">
                                 <div className="img-box">
@@ -105,7 +114,8 @@ export default function Class(){
                                 </div>
                             </div>
                             </div>
-                        </div>
+                        
+                        </OwlCarousel>
                         </div>
                     </div>
                     </div>

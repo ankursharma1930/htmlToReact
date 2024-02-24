@@ -5,6 +5,7 @@ import Header from './components/common/header';
 import Slider from './components/others/slider';
 import About from './components/others/about';
 import Class from './components/others/class';
+import Blog from './components/others/blog';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       </div>
       <About />
       <Class />
+      <Blog />
     </>
   );
 }
