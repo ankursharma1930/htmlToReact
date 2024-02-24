@@ -6,6 +6,8 @@ import Slider from './components/others/slider';
 import About from './components/others/about';
 import Class from './components/others/class';
 import Blog from './components/others/blog';
+import Client from './components/others/client';
+import Info from './components/others/info';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <About />
       <Class />
       <Blog />
+      <Client />
+      <Info />
     </>
   );
 }

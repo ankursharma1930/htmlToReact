@@ -5,11 +5,11 @@ import b2 from '../../assests/images/b2.jpg';
 export default function Blog(){
     return (
         <>
-            <section class="blog_section layout_padding">
-                <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-10 ml-auto">
-                    <div class="heading_container">
+            <section className="blog_section layout_padding">
+                <div className="container-fluid">
+                <div className="row">
+                    <div className="col-md-10 ml-auto">
+                    <div className="heading_container">
                         <h2>
                         Latest Blog
                         </h2>
@@ -19,16 +19,16 @@ export default function Blog(){
                     </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 pl-0">
-                    <div class="box b1">
-                        <div class="img-box">
+                <div className="row">
+                    <div className="col-md-6 pl-0">
+                    <div className="box b1">
+                        <div className="img-box">
                         <img src={b1} alt="" />
                         </div>
-                        <div class="row">
-                        <div class="col-lg-8 col-md-10 ml-auto">
-                            <div class="detail-box">
-                            <div class="img_date">
+                        <div className="row">
+                        <div className="col-lg-8 col-md-10 ml-auto">
+                            <div className="detail-box">
+                            <div className="img_date">
                                 <h6>
                                 17 <br />
                                 Feb
@@ -48,15 +48,15 @@ export default function Blog(){
                         </div>
                     </div>
                     </div>
-                    <div class="col-md-6 pr-0">
-                    <div class="box b2">
-                        <div class="img-box">
+                    <div className="col-md-6 pr-0">
+                    <div className="box b2">
+                        <div className="img-box">
                         <img src={b2} alt="" />
                         </div>
-                        <div class="row">
-                        <div class="col-lg-8 col-md-10 mr-auto">
-                            <div class="detail-box">
-                            <div class="img_date">
+                        <div className="row">
+                        <div className="col-lg-8 col-md-10 mr-auto">
+                            <div className="detail-box">
+                            <div className="img_date">
                                 <h6>
                                 17 <br />
                                 Jun
@@ -68,7 +68,7 @@ export default function Blog(){
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                             </p>
-                            <a href="">
+                            <a href="/">
                                 Read More
                             </a>
                             </div>
