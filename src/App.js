@@ -2,26 +2,27 @@ import './App.css';
 import './assests/css/style.css';
 import './assests/css/responsive.css';
 import Header from './components/common/header';
-import Slider from './components/others/slider';
-import About from './components/others/about';
-import Class from './components/others/class';
-import Blog from './components/others/blog';
-import Client from './components/others/client';
-import Info from './components/others/info';
+
+
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import  Home from './pages/home';
+import Blog from './pages/blogpage';
+import Classes from './pages/classes';
+import About from './pages/about';
 
 function App() {
   return (
-    <>
-      <div className="hero_area">
-        <Header />
-        <Slider />
-      </div>
-      <About />
-      <Class />
-      <Blog />
-      <Client />
-      <Info />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Header />}>
+          <Route index element={<Home/>} />
+          <Route path="blogs" element={<Blog />} />
+          <Route path="classes" element={<Classes />} />
+          <Route path="about" element={<About />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
